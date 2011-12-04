@@ -1,8 +1,5 @@
-#norootforbuild
-#
 %define real_name pycountry
-#
-#
+
 Name:           python-pycountry
 Group:          Development/Python 
 Version:        0.14.1
@@ -31,5 +28,5 @@ python setup.py build
 %{__python} setup.py install -O1 --skip-build --root %{buildroot}
 
 %files
-%{py_platsitedir}/*
-
+#% {py_platsitedir}/*
+%{python_sitelib}/*
