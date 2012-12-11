@@ -30,3 +30,11 @@ python setup.py build
 %files
 #% {py_platsitedir}/*
 %{python_sitelib}/*
+
+
+%changelog
+* Sun Dec 04 2011 Alexander Khrukin <akhrukin@mandriva.org> 0.14.1-1
++ Revision: 737701
+- files section fix hmmm...
+- imported package python-pycountry
+
