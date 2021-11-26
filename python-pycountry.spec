@@ -2,11 +2,11 @@
 
 Name:           python-pycountry
 Group:          Development/Python 
-Version:        0.14.1
-Release:        2
+Version:        20.7.3
+Release:        1
 License:        LGPL v2.1
 Summary:        Databases for iso standards 639 3166 3166-2 4217 15924
-Source:         %{real_name}-%{version}.tar.gz
+Source:          https://pypi.python.org/packages/source/p/pycountry/%{real_name}-%{version}.tar.gz
 Requires:       python, python-lxml
 BuildRequires:  python-setuptools
 Url:            http://pypi.python.org/pypi/pycountry/
