@@ -4,7 +4,7 @@
 
 Name:           python-pycountry
 Group:          Development/Python 
-Version:        20.7.3
+Version:        22.3.5
 Release:        1
 License:        LGPL v2.1
 Summary:        Databases for iso standards 639 3166 3166-2 4217 15924
