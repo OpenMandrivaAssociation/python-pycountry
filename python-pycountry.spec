@@ -9,6 +9,7 @@ Summary:        Databases for iso standards 639 3166 3166-2 4217 15924
 Source:         https://pypi.python.org/packages/source/p/pycountry/%{real_name}-%{version}.tar.gz
 Requires:       python, python-lxml
 BuildRequires:	python
+BuildRequires:	python%{pyver}dist(poetry)
 Url:            http://pypi.python.org/pypi/pycountry/
 BuildArch:	noarch
 
