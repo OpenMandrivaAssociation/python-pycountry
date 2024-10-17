@@ -10,7 +10,7 @@ Source:         https://pypi.python.org/packages/source/p/pycountry/%{real_name}
 Requires:       python, python-lxml
 BuildRequires:	python
 BuildRequires:	python%{pyver}dist(poetry)
-Url:            http://pypi.python.org/pypi/pycountry/
+Url:            https://pypi.python.org/pypi/pycountry/
 BuildArch:	noarch
 
 %description
