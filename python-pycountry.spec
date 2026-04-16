@@ -1,18 +1,19 @@
-%define real_name pycountry
+%define module pycountry
 
-Name:           python-pycountry
-Group:          Development/Python 
-Version:        24.6.1
-Release:        2
-License:        LGPL v2.1
-Summary:        Databases for iso standards 639 3166 3166-2 4217 15924
-Source:         https://pypi.python.org/packages/source/p/pycountry/%{real_name}-%{version}.tar.gz
-Requires:       python, python-lxml
-BuildRequires:	python
-BuildRequires:	python%{pyver}dist(poetry)
-BuildRequires:	python%{pyver}dist(pip)
-Url:            https://pypi.python.org/pypi/pycountry/
+Name:		python-pycountry
+Summary:	Databases for ISO standards 639 3166 3166-2 4217 15924
+Version:	26.2.16
+Release:	1
+License:	LGPL-2.1-only
+Group:		Development/Python
+URL:		https://pypi.python.org/pypi/pycountry/
+Source:		https://files.pythonhosted.org/packages/source/p/%{module}/%{module}-%{version}.tar.gz#/%{name}-%{version}.tar.gz
+
+BuildSystem:	python
 BuildArch:	noarch
+BuildRequires:	python%{pyver}dist(pip)
+BuildRequires:	python%{pyver}dist(poetry-core)
+BuildRequires:	python%{pyver}dist(wheel)
 
 %description
 pycountry provides the ISO databases for the standards 639 (Languages),
@@ -21,14 +22,7 @@ pycountry provides the ISO databases for the standards 639 (Languages),
 packaged into pycountry and made accessible through a Python API.
 Translation files for the various strings are included as well.
 
-%prep
-%autosetup -p1 -n pycountry-%{version}
-
-%build
-%py_build
-
-%install
-%py_install
-
 %files
-%{python_sitelib}/*
+%doc README.rst
+%{python_sitelib}/%{module}
+%{python_sitelib}/%{module}-%{version}.dist-info
