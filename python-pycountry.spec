@@ -3,7 +3,7 @@
 Name:		python-pycountry
 Summary:	Databases for ISO standards 639 3166 3166-2 4217 15924
 Version:	26.2.16
-Release:	1
+Release:	2
 License:	LGPL-2.1-only
 Group:		Development/Python
 URL:		https://pypi.python.org/pypi/pycountry/
